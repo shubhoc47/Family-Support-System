@@ -194,7 +194,7 @@ java com.mycompany.distributed_assessment1.App
 ---
 
 ## **Screenshots**
-Include screenshots of the application interface.
+![Project Interface](images/application.png "Family Support System Interface")
 
 ---
 
