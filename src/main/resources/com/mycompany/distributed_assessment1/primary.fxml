@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="863.0" prefWidth="821.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.distributed_assessment1.Controller">
+
+    <!-- Title -->
+    <VBox alignment="CENTER" spacing="15.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <Label style="-fx-font-size: 20; -fx-font-weight: bold;" text="Intergenerational Family Support System" />
+    </VBox>
+
+    <!-- Section 1: Registration with Password -->
+    <VBox spacing="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="70.0">
+        <Label style="-fx-font-size: 16; -fx-font-weight: bold;" text="Register Member with Password" />
+
+        <GridPane hgap="10.0" vgap="10.0">
+            <Label text="Spouse 1 Name:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id="spouse1Field" promptText="Enter first spouse's name" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label text="Spouse 2 Name:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <TextField fx:id="spouse2Field" promptText="Enter second spouse's name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <Label text="Phone Number:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <TextField fx:id="phoneField" promptText="Enter phone number" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+            <Label text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <TextField fx:id="emailField" promptText="Enter email address" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+            <Label text="Address:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <TextField fx:id="addressField" promptText="Enter address" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+            <Label text="Years Married (Older Couple):" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <TextField fx:id="yearsMarriedField" promptText="Enter years married" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+            <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+            <TextField fx:id="passwordField" promptText="Enter a secure password" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+            <Label text="Children Info (Young Family):" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+            <TextArea fx:id="childrenField" prefHeight="50.0" promptText="Enter children details" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+
+        <HBox alignment="CENTER" spacing="15.0">
+            <Button fx:id="registerOlderButton" text="Register Older Couple" />
+            <Button fx:id="registerYoungButton" text="Register Young Family" />
+        </HBox>
+    </VBox>
+
+    <!-- Section 2: Login with FIDN and Password -->
+    <VBox spacing="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="400.0">
+        <Label style="-fx-font-size: 16; -fx-font-weight: bold;" text="Login Section" />
+
+        <GridPane hgap="10.0" vgap="10.0">
+            <Label text="FIDN:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id="fidnField" promptText="Enter FIDN" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <TextField fx:id="loginPasswordField" promptText="Enter your password" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+
+        <HBox alignment="CENTER" spacing="15.0">
+            <Button fx:id="viewDetailsButton" text="Login and View Member Details" />
+            <Button fx:id="viewFidnsButton" text="View All FIDNs" />
+        </HBox>
+    </VBox>
+
+    <!-- Section 3: Create an Event -->
+    <VBox spacing="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="550.0">
+        <Label style="-fx-font-size: 16; -fx-font-weight: bold;" text="Create an Event" />
+
+        <GridPane hgap="10.0" vgap="10.0">
+            <Label text="Event Name:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id="eventNameField" promptText="Enter event name" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label text="Event Date:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <TextField fx:id="eventDateField" promptText="Enter event date" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <Label text="Event Description:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <TextArea fx:id="eventDescriptionField" prefHeight="50.0" promptText="Describe the event" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+
+        <HBox alignment="CENTER" spacing="15.0">
+            <Button fx:id="createEventButton" text="Create Event" />
+        </HBox>
+    </VBox>
+
+    <!-- Results Area -->
+    <VBox layoutX="0.8" prefHeight="110.0" prefWidth="786.0" spacing="20.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="13.0">
+        <Label style="-fx-font-size: 16; -fx-font-weight: bold;" text="Message Area:" />
+        <TextArea fx:id="detailsArea" editable="false" prefHeight="32.0" prefWidth="787.0" promptText="Results will appear here" />
+    </VBox>
+
+</AnchorPane>

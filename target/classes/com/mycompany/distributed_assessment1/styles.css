@@ -1,0 +1,68 @@
+/* General Styles */
+.root {
+    -fx-background-color: #f9f9f9;
+    -fx-font-family: "Arial";
+}
+
+/* Title Section */
+.label {
+    -fx-text-fill: #333333;
+    -fx-font-weight: bold;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: #45a049;
+}
+
+.button:pressed {
+    -fx-background-color: #367c39;
+}
+
+/* Text Fields and Password Fields */
+.text-field, .password-field, .text-area {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5;
+    -fx-padding: 4 8;
+}
+
+.text-field:focused, .password-field:focused, .text-area:focused {
+    -fx-border-color: #4CAF50;
+    -fx-border-width: 2px;
+}
+
+/* VBox and HBox Layouts */
+.vbox, .hbox {
+    -fx-spacing: 10;
+}
+
+/* GridPane Labels */
+.grid-pane .label {
+    -fx-text-fill: #555555;
+    -fx-font-weight: normal;
+}
+
+/* TextArea Styling */
+.text-area {
+    -fx-control-inner-background: #f5f5f5;
+    -fx-font-family: "Courier New";
+    -fx-font-size: 12px;
+}
+
+/* Results Section */
+.text-area:disabled {
+    -fx-opacity: 1;
+    -fx-background-color: #f1f1f1;
+    -fx-border-color: #cccccc;
+}
