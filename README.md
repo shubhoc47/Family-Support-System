@@ -2,7 +2,7 @@ Here's a comprehensive `README.md` file template for your project. It includes d
 
 ---
 
-# **Distributed Assessment 1: Family Support System**
+# **Family Support System**
 
 ## **Project Description**
 This project is a **JavaFX-based Family Support System** that provides functionalities for registering families (older couples and young families), managing events, and enabling secure user authentication using encrypted communication between the client and server. The project uses **JavaFX**, **Maven**, and a **MySQL database**.
@@ -35,30 +35,48 @@ This project is a **JavaFX-based Family Support System** that provides functiona
 
 ---
 
+Based on your NetBeans project structure, here's the updated folder structure for the `README.md` file:
+
+```markdown
+## **Folder Structure**
+```
+Here’s the updated folder structure in a plain format for your `README.md` file:
+
+---
+
 ## **Folder Structure**
 ```
 Distributed_Assessment1/
 ├── src/
 │   ├── main/
 │   │   ├── java/
+│   │   │   ├── module-info.java
 │   │   │   └── com/
 │   │   │       └── mycompany/
 │   │   │           └── distributed_assessment1/
-│   │   │               ├── App.java        # Main JavaFX application
-│   │   │               ├── Controller.java # FXML Controller
-│   │   │               ├── Server.java     # Server implementation
-│   │   │               ├── Client.java     # Client implementation
-│   │   │               ├── DatabaseConnection.java # Database utility
+│   │   │               ├── App.java                  # Main JavaFX application
+│   │   │               ├── Child.java               # Child class for Young Family
+│   │   │               ├── Client.java              # Client implementation
+│   │   │               ├── Controller.java          # Controller for main FXML
+│   │   │               ├── DatabaseConnection.java  # Database utility
+│   │   │               ├── FileHandler.java         # File handling utility (if used)
+│   │   │               ├── OlderCouple.java         # Older Couple entity
+│   │   │               ├── Person.java              # Abstract base class for Person
+│   │   │               ├── PrimaryController.java   # Controller for primary.fxml
+│   │   │               ├── SecondaryController.java # Controller for secondary.fxml
+│   │   │               ├── Server.java              # Server implementation
+│   │   │               └── YoungFamily.java         # Young Family entity
 │   │   ├── resources/
 │   │       └── com/
 │   │           └── mycompany/
 │   │               └── distributed_assessment1/
-│   │                   ├── fxml.fxml       # Main FXML file
-│   │                   ├── styles.css      # CSS file for styling
-│   │                   ├── primary.fxml    # Secondary FXMLs (optional)
-│   │                   ├── secondary.fxml
-├── pom.xml                                 # Maven configuration
-├── README.md                               # Project description
+│   │                   ├── FXML.fxml                # Main FXML file
+│   │                   ├── primary.fxml             # Primary layout FXML
+│   │                   ├── secondary.fxml           # Secondary layout FXML
+│   │                   ├── styles.css               # CSS for styling
+├── pom.xml                                          # Maven configuration
+├── nbactions.xml                                    # NetBeans configuration
+└── README.md                                        # Project description
 ```
 
 ---
@@ -195,5 +213,3 @@ Contributions are welcome! Feel free to submit a pull request.
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ---
-
-Replace placeholders like `yourusername`, `your-username`, and `your-password` with your actual GitHub username and MySQL credentials. Once the `README.md` is complete, you can commit it to your repository.
