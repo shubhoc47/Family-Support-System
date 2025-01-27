@@ -194,7 +194,7 @@ java com.mycompany.distributed_assessment1.App
 ---
 
 ## **Screenshots**
-![Project Interface](images/application.png "Family Support System Interface")
+<img src="images/application.png" alt="Family Support System Interface" width="500" title="Family Support System Interface">
 
 ---
 
